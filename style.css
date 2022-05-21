@@ -3,46 +3,10 @@ html {
   --color: #57f59e;
 }
 
-/*.linkbar,
-.linkbar:hover {
-  color: #fff !important;
-  background-color: forestgreen !important;
-}*/
-
-/*header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
-}*/
-
-header h1,
-header h3 {
-  background: #630eec;
-  /*width: 500px;*/
-  margin: 0 auto;
-  text-align: left;
+.whiteSpace {
+  padding-bottom: 20px;
 }
 
-.links {
-  padding: calc(var(--spacing) / 2) 0;
-  text-align: justify;
-  font-size: 20px;
-}
-.centerPiece {
-}
-
-.Assignments {
-  position: fixed;
-  bottom: 0px;
-  height: 750px;
-}
-
-body p {
-  box-sizing: border-box;
-  text-align: center;
-  position: sticky;
-  height: 100px;
-  font-size: 24px;
+body {
+  background-color: rgb(133, 183, 212);
 }
