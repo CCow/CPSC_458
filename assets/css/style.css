@@ -382,6 +382,13 @@ section {
   margin-bottom: 0;
 }
 
+.profile-border {
+  box-shadow: 0 0 0 10px white;
+  outline: dashed 10px black;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
