@@ -282,6 +282,10 @@ h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+
+    h2{
+    color: white;
+    }
   }
 }
 
@@ -436,7 +440,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
