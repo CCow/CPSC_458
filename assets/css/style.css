@@ -1,21 +1,19 @@
-/**
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: #e0e0e0; /* Light text for better contrast on dark background */
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Subtle gradient */
 }
 
 a {
-  color: #149ddd;
+  color: #FF6A87;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #FF0535;
   text-decoration: none;
 }
 
@@ -26,6 +24,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+  color: #e0e0e0; /* Ensure headings are white for good contrast */
 }
 
 /*--------------------------------------------------------------
@@ -122,8 +121,11 @@ h6 {
   text-decoration: none;
 }
 
+/* Ensure main content has a dark pattern background */
 #main {
   margin-left: 300px;
+  background: linear-gradient(108deg, #181818, #201f25a3);
+  color: #f1f1f1; /* Light text for good contrast */
 }
 
 .container,
@@ -250,7 +252,9 @@ h6 {
   right: 0;
   z-index: 1;
 }
-
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 #hero .hero-container {
   position: relative;
   z-index: 2;
@@ -282,10 +286,9 @@ h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
-
-    h2{
+  }
+  #hero h2 {
     color: white;
-    }
   }
 }
 
@@ -294,7 +297,6 @@ h6 {
     font-size: 28px;
     line-height: 36px;
   }
-
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
@@ -311,7 +313,10 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: url('https://images.unsplash.com/photo-1510554310709-f60fc3cf34e6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0; /* Light grey text */
+  background-blend-mode: darken;
 }
 
 .section-title {
@@ -324,7 +329,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #e0e0e0; /* Light color for section titles */
 }
 
 .section-title h2::after {
@@ -333,13 +338,14 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #FF6A87;
   bottom: 0;
   left: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: #e0e0e0; /* Light color for section paragraphs */
 }
 
 /*--------------------------------------------------------------
@@ -348,7 +354,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #fff; /* Light color for about section headings */
 }
 
 .about .content .row {
@@ -364,16 +370,18 @@ section {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
+  color: #dcdcdc; /* Light color for about section list items */
 }
 
 .about .content ul strong {
   margin-right: 10px;
+  color: #fff; /* Light color for strong text */
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #FF6A87;
   line-height: 0;
 }
 
@@ -388,16 +396,20 @@ section {
   width: 100%;
   border-radius: 50%;
 }
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
 .facts {
   padding-bottom: 30px;
+  background: #1a1a1a; /* Dark background for facts section */
 }
 
 .facts .count-box {
   padding: 30px;
   width: 100%;
+  background: #2a2a2a; /* Slightly lighter background for count boxes */
+  color: #fff; /* Light color for facts text */
 }
 
 .facts .count-box i {
@@ -413,7 +425,7 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: #050d18;
+  color: #fff;
   margin-left: 60px;
 }
 
@@ -422,14 +434,14 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: #dcdcdc;
 }
 
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: #dcdcdc;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
@@ -456,16 +468,17 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #fff; /* Light color for skill names */
 }
 
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+  color: #dcdcdc; /* Light color for skill values */
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: #2a2a2a; /* Dark background for progress bar wrap */
   height: 10px;
 }
 
@@ -484,14 +497,15 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #fff; /* Light color for resume titles */
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #FF6A87;
   position: relative;
+  color: #dcdcdc; /* Light color for resume items */
 }
 
 .resume .resume-item h4 {
@@ -500,7 +514,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #000000;
+  color: #ffb7c5;
   margin-bottom: 10px;
 }
 
@@ -510,17 +524,19 @@ section {
   font-size: 13px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  color: #404040;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h6 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #ffb7c5;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #000000;
+  border-radius: 20px;
 }
 
 .resume .resume-item ul {
@@ -543,8 +559,12 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+  background: #2a2a2a;
+  border: 2px solid #FF6A87;
+}
+
+#resume .section-title{
+  padding-bottom: 0px;
 }
 
 /*--------------------------------------------------------------
@@ -678,7 +698,8 @@ section {
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  box-shadow: 0px 0 12px rgba(31, 162, 255, 0.75);
+  background-color: #2d2e2f;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -711,6 +732,11 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+.portfolio-details .portfolio-description li {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 /*--------------------------------------------------------------
@@ -871,16 +897,16 @@ section {
   padding: 30px;
   background: #fff;
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 24px 0 #000000;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #FF6A87;
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #2a2a2a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -934,15 +960,16 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
+  background: #FF6A87;
+  color: #2a2a2a;
 }
 
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
   background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 24px 0 #000000;
+  color: #000;
 }
 
 .contact .php-email-form .form-group {
@@ -1022,16 +1049,17 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #FF849C;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: #2a2a2a;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: #FF0032;
+  color: #000;
 }
 
 @keyframes animate-loading {
@@ -1049,7 +1077,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
+  background: #2a2a2a;
 }
 
 .breadcrumbs h2 {
